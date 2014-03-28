@@ -28,6 +28,12 @@ describe('Poker Hands', function() {
 
             expect(result).toEqual(false);
         });
+
+        it('should return true if the cards have same colors', function() {
+            var result = pokerHands.hasSameColor('2H 3H 5H 9H KH');
+
+            expect(result).toEqual(true);
+        });
     });
 
 });
