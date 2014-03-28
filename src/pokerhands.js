@@ -40,3 +40,18 @@ PokerHands.prototype.sort = function(handArray) {
         return 0;
     });
 };
+
+PokerHands.prototype.hasSameColor = function(hand) {
+    var handsArray = hand.split(' ');
+    var tmp;
+    for (var i = 0; i < handsArray.length; i++) {
+        if (!tmp) {
+            tmp = handsArray[i][1];
+        } else {
+            if (tmp != handsArray[i][1]) {
+                return false;
+            }
+        }
+    }
+    return true;
+};
