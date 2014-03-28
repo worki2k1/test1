@@ -36,4 +36,12 @@ describe('Poker Hands', function() {
         });
     });
 
+    describe('high card', function() {
+        it('should return 12', function() {
+            var input = [2, 3, 5, 9, 12];
+            var result = pokerHands.checkHighCard(input);
+            expect(result).toEqual(12);
+        });
+    });
+
 });
