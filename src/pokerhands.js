@@ -55,3 +55,7 @@ PokerHands.prototype.hasSameColor = function(hand) {
     }
     return true;
 };
+
+PokerHands.prototype.checkHighCard = function(handArray) {
+    return handArray[handArray.length - 1];
+};
