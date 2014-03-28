@@ -10,4 +10,14 @@ describe('Poker Hands', function() {
     });
 
 
+    it('should sort an array', function() {
+        var pokerHands = new PokerHands();
+
+        var input = [9, 5, 12, 2, 3];
+        var result = pokerHands.sort();
+        var expected = [2, 3, 5, 9, 12];
+
+        expect(result).toEqual(expected);
+    });
+
 });
