@@ -25,7 +25,7 @@ describe('Poker Hands', function() {
             var pokerHands = new PokerHands();
             var result = pokerHands.hasSameColor('2H 3D 5S 9C KD');
 
-            expect(result).toEqual(true);
+            expect(result).toEqual(false);
         });
     });
 
