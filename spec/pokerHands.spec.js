@@ -48,7 +48,7 @@ describe('Poker Hands', function() {
         it('should return true', function() {
             var input = [2, 3, 3, 9, 12];
             var result = pokerHands.checkPair(input);
-            expect(result).toEqual(true);
+            expect(result).toEqual(3);
         });
     });
 

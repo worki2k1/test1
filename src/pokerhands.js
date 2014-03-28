@@ -61,12 +61,13 @@ PokerHands.prototype.checkHighCard = function(handArray) {
 };
 
 PokerHands.prototype.checkPair = function(handArray) {
-    var tmp;
+    var prev;
+
     for (var i = 0; i < handArray.length; i++) {
-        if (tmp && tmp == handArray[i]) {
-            return true;
+        if (handArray[i] === prev) {
+            return handArray[i];
         }
-        tmp = handArray[i];
+        prev = handArray[i];
     }
     return false;
 };
