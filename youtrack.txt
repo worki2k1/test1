@@ -1,0 +1,3 @@
+Registrierungsseite: http://mfpoker.myjetbrains.com/youtrack/registerUserForm
+
+Projekt: http://mfpoker.myjetbrains.com
