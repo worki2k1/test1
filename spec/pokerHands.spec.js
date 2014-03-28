@@ -20,4 +20,13 @@ describe('Poker Hands', function() {
         expect(result).toEqual(expected);
     });
 
+    describe('same color', function() {
+        it('should return false if the cards have different colors', function() {
+            var pokerHands = new PokerHands();
+            var result = pokerHands.hasSameColor('2H 3D 5S 9C KD');
+
+            expect(result).toEqual(true);
+        });
+    });
+
 });
