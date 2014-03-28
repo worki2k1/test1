@@ -59,3 +59,15 @@ PokerHands.prototype.hasSameColor = function(hand) {
 PokerHands.prototype.checkHighCard = function(handArray) {
     return handArray[handArray.length - 1];
 };
+
+PokerHands.prototype.checkPair = function(handArray) {
+    var prev;
+
+    for (var i = 0; i < handArray.length; i++) {
+        if (handArray[i] === prev) {
+            return handArray[i];
+        }
+        prev = handArray[i];
+    }
+    return false;
+};
