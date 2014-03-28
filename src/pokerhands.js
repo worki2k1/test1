@@ -1,4 +1,4 @@
-function PokerHands() {};
+function PokerHands() {}
 
 PokerHands.prototype.translate = function(hand) {
 
@@ -28,4 +28,15 @@ PokerHands.prototype.translate = function(hand) {
     }
     return handsArray;
 
+};
+
+PokerHands.prototype.sort = function(handArray) {
+    return handArray.sort(function(a, b) {
+        if (a < b) {
+            return -1;
+        } else if (a > b) {
+            return 1;
+        }
+        return 0;
+    });
 };
