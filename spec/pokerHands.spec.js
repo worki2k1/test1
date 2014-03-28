@@ -44,4 +44,12 @@ describe('Poker Hands', function() {
         });
     });
 
+    describe('pair', function() {
+        if('should return true', function() {
+            var input = [2, 3, 3, 9, 12];
+            var result = pokerHands.checkPair(input);
+            expect(result).toEqual(true);
+        });
+    });
+
 });
