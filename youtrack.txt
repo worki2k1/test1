@@ -1,3 +1,5 @@
 Registrierungsseite: http://mfpoker.myjetbrains.com/youtrack/registerUserForm
 
 Projekt: http://mfpoker.myjetbrains.com
+
+Deeplink zu einem Ticket: http://mfpoker.myjetbrains.com/youtrack/issue/PH-1
